@@ -2,12 +2,21 @@ platform: linux
 
 image_resource:
   type: docker-image
-  source:
-    repository: microsoft/dotnet
+  source: {repository: bigangryrobot/fuze}
 
 inputs:
-- name: Fuze
+- name: repository
+
+outputs: 
+- name: kubernetes-yml
 
 run:
   path: sh
-  args: ["Fuze/ci-build.sh"]
+  args:
+    - -exc
+    - |
+      ls /fuze
+      dotnet restore /fuze
+      dotnet run -p /fuze
+      ls /tmp/build
+      cp /tmp/build/*-*.yml ./kubernetes-yml

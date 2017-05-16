@@ -1,3 +1,9 @@
+groups:
+- name: main
+  jobs:
+  - check-os-version
+  - issue-ls-command
+  
 resources:
 - name: Fuze
   type: git
