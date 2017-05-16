@@ -1,0 +1,42 @@
+---
+configs:
+ - name: prod
+   appName: foo
+   domain: 
+    - 'foo.bar.com'
+    - 'foo.bar.com'
+   image: 'nginx:latest-prod'
+   env:
+     - key1: value
+   secret:
+     - key1: value
+ - name: train
+   appName: foo
+   domain: 
+    - 'foo.bar.com'
+    - 'foo.bar.com'
+   image: 'nginx:latest-train'
+   env:
+     - key1: value
+   secret:
+     - key1: value          
+ - name: test
+   appName: foo
+   domain: 
+    - 'foo.bar.com'
+    - 'foo.bar.com'
+   image: 'nginx:latest-test'
+   env:
+     - key1: value
+   secret:
+     - key1: value
+ - name: dev
+   appName: foo
+   domain: 
+    - 'foo.bar.com'
+    - 'foo.bar.com'
+   image: 'nginx:latest-dev'
+   env:
+     - key1: value
+   secret:
+     - key1: value

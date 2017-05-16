@@ -1,0 +1,14 @@
+resources:
+- name: Fuze
+  type: git
+  source:
+    uri: https://github.com/bigangryrobot/fuze.git
+    branch: master
+
+jobs:
+- name: Fuze
+  plan:
+  - get: Fuze
+    trigger: true
+  - task: tests
+    file: Fuze/ci-build.yaml

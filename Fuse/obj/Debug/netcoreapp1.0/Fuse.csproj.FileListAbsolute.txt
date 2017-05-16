@@ -1,0 +1,8 @@
+/home/commanderkeen/workspaces/fuze/Fuse/bin/Debug/netcoreapp1.0/Fuse.deps.json
+/home/commanderkeen/workspaces/fuze/Fuse/bin/Debug/netcoreapp1.0/Fuse.runtimeconfig.json
+/home/commanderkeen/workspaces/fuze/Fuse/bin/Debug/netcoreapp1.0/Fuse.runtimeconfig.dev.json
+/home/commanderkeen/workspaces/fuze/Fuse/obj/Debug/netcoreapp1.0/Fuse.AssemblyInfo.cs
+/home/commanderkeen/workspaces/fuze/Fuse/bin/Debug/netcoreapp1.0/Fuse.dll
+/home/commanderkeen/workspaces/fuze/Fuse/bin/Debug/netcoreapp1.0/Fuse.pdb
+/home/commanderkeen/workspaces/fuze/Fuse/obj/Debug/netcoreapp1.0/Fuse.dll
+/home/commanderkeen/workspaces/fuze/Fuse/obj/Debug/netcoreapp1.0/Fuse.pdb
