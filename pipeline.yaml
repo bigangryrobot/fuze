@@ -1,20 +1,14 @@
-groups:
-- name: main
-  jobs:
-  - check-os-version
-  - issue-ls-command
-  
 resources:
-- name: Fuze
+- name: repository
   type: git
   source:
     uri: https://github.com/bigangryrobot/fuze.git
     branch: master
 
 jobs:
-- name: Fuze
+- name: build-fuze
   plan:
-  - get: Fuze
+  - get: repository
     trigger: true
   - task: tests
-    file: Fuze/ci-build.yaml
+    file: repository/ci-build.yaml
